@@ -1,0 +1,27 @@
+#adapted from example in docker documentation
+version: '3'
+
+services:
+  web:
+    build: .
+    depends_on:
+      - redis
+    volumes:
+       - .:/code
+       - '/app/node_modules'
+    links:
+      - redis:redis
+    ports:
+       - 80:80
+    user: "1000:1000"
+    working_dir: /code/baedin
+    command: python /code/baedin/manage.py runserver 0.0.0.0:80
+    #command: daphne -b 0.0.0.0 -p 80 baedin.asgi:application
+
+  redis:
+    image: redis
+    expose:
+      - 6379
+    command: redis-server
+    ports:
+      - "6379:6379"

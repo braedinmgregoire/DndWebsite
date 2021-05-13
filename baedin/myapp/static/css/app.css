@@ -1,0 +1,68 @@
+.errorlist
+    {
+        color: red;
+    }
+
+.card-info {
+  background: #a6a6a6b3;
+  margin: 1rem 0;
+}
+
+.card-info.primary {
+  min-width: 25%;
+  border-radius: 20px;
+  border-left: 8px solid #8000FF;
+  border-right: 3px solid #8a8a8a;
+  border-top: 3px solid #8a8a8a;
+  border-bottom: 3px solid #8a8a8a;
+  border-color: #1779ba;
+  margin: 20px
+}
+
+.card-info.name{
+  text-align: center;
+  radius: 10px;
+}
+
+.card-info.content{
+  margin: 10px;
+}
+
+.backdrop{
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+
+.pageButton{
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.grid-container{
+  grid-row-start: 2;
+  grid-column-start: 2;
+  display: grid;
+  height: 100vh;
+}
+
+.button{
+  color: black;
+  background-color: #203993;
+  font-size: 20px;
+}
+
+.a{
+  color: black;
+}
+
+.select{
+  color:blue;
+}

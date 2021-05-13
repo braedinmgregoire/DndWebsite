@@ -1,0 +1,15 @@
+.pageButton{
+  text-align: center;
+  padding: 20px;
+}
+.grid-container{
+  grid-row-start: 2;
+  grid-column-start: 2;
+  display: grid;
+  align-content: center;
+  height: 100vh;
+}
+.button{
+  background-color: #3457dc;
+  font-size: 30px;
+}

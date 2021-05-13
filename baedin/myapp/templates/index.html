@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/app.css' %}" />
+{% endblock %}
+{% block content %}
+
+
+
+
+<div class="backdrop">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div id="list-rendering">
+            <div class="large-12 medium-12 small-12 cell">
+            <div class = "card-info primary" v-for="charz in characters">
+              <div class = "card-info content">
+              {% verbatim %}
+                <li id="sheet1">
+                  <ul class="card-info name">{{ charz.name }}</ul>
+                  <ul> Race: {{ charz.race }} </ul>
+                  <ul> Description: {{ charz.description }} </ul>
+                  <ul> Weapon: {{ charz.weapon }} </ul>
+                </li>
+                {% endverbatim %}
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="{% static 'js/myvue.js' %}"></script>
+{% endblock %}
